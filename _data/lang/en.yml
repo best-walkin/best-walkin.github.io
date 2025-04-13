@@ -175,7 +175,7 @@ privacy-policy:
 constants:
   greetings: Hello, welcome to my blog.
   welcome: Welcome
-  sample: Here I will share my learning process, and I hope these articles will help you.
+  sample: "Here I will share my learning process, and I hope these articles will help you."
 
 # for contact form
 contact_form:
