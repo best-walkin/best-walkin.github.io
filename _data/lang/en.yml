@@ -173,9 +173,9 @@ privacy-policy:
 
 # constants to be replaced for
 constants:
-  greetings: Welcome to Walkin blog! Thanks for your attention.
+  greetings: Welcome to Walkin Blog! Thanks for your attention.
   welcome: Welcome
-  sample: 
+  sample: "I will record my learning process here, and I hope to help you. I hope to make progress with you!<br>If you think there is an error in the article, please contact me in time, I will be very grateful for your guidance!"
   #"Here I will share my learning process, and I hope these articles will help you. If you have any questions, please feel free to contact me. I will be happy to help you.\n"
 
 # for contact form

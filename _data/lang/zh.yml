@@ -174,9 +174,9 @@ privacy-policy:
 
 # constants to be replaced for
 constants:
-  greetings: ""
+  greetings: "欢迎来到Walkin的博客！感谢您的关注。"
   welcome: 欢迎
-  sample: "Welcome  welcomr<br>"
+  sample: "在这里我将记录我的学习历程，希望能够给您提供帮助，希望与您共同进步！<br>如果您认为文章中有错误，请及时与我联系，我将万分感谢您的指导！"
 
 
 # for contact form
