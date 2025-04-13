@@ -34,11 +34,24 @@ img: ":about.jpg"
 #search_engine_exclude: true
 # to disable this page, simply set published: false or delete this file
 #published: false
+
+
+#{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
+
+#{%- include util/auto-content-generator.liquid -%}
+#{{ website_info_text_first }}
+
+#{{ website_info_text_second }}
+
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-{%- include util/auto-content-generator.liquid -%}
-{{ website_info_text_first }}
+## 我的长城之旅
 
-{{ website_info_text_second }}
+站在长城上眺望远方，感受历史的厚重与自然的壮丽。长城蜿蜒于群山之间，仿佛一条巨龙守护着这片土地。
+
+- **历史感**：长城承载了千年历史，每一块砖石都仿佛在诉说过去。
+- **自然美**：周围的群山在夕阳下显得格外壮观。
+
+我站在这里，心潮澎湃，思考着古人的智慧与坚韧。
