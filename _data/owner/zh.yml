@@ -48,8 +48,8 @@ meta_common_description: "我是一名学生，正在学习编程和第一性原
 # the order of the items will be shown as here.
 # comment to remove any contact item
 contacts:
-  #- github: ""
-  #- email: ""
+#  - github: ""
+  - email: "zengnianma@gmail.com"
   #- linkedin: ""
   #- twitter: ""
   #- mastodon: ""

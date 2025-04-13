@@ -48,8 +48,8 @@ meta_common_description: "I am a student learning programming and first principl
 # the order of the items will be shown as here.
 # comment to remove any contact item
 contacts:
-  - github: ""
-  - email: ""
+#  - github: ""
+  - email: "zengnianma@gmail.com"
   #- linkedin: ""
   #- twitter: ""
   #- mastodon: ""
