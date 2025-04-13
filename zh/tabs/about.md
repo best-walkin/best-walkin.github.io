@@ -33,7 +33,7 @@ img: ":about.jpg"
 # exclude from search engines
 #search_engine_exclude: true
 # to disable this page, simply set published: false or delete this file
-#published: false
+published: false
 #{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
 #{%- include util/auto-content-generator.liquid -%}
@@ -44,7 +44,7 @@ img: ":about.jpg"
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-## 我的长城之旅
+## 写在前面
 
 站在长城上眺望远方，感受历史的厚重与自然的壮丽。长城蜿蜒于群山之间，仿佛一条巨龙守护着这片土地。
 
