@@ -17,9 +17,9 @@ home:
   # if commented, top header will be a single line
   top_header_line2: "$site_brand"
 
-# about page sub title
+# about page sub title$site_sample
 about:
-  sub_title: "$site_sample"
+  sub_title: ""
 
 # if you don't want to add copyright year, comment or leave it blank.
 # the year during which the claimed copyright for the work was first asserted.
