@@ -174,9 +174,9 @@ privacy-policy:
 
 # constants to be replaced for
 constants:
-  greetings: 
+  greetings: ""
   welcome: 欢迎
-  sample: "Welcome  welcomr"
+  sample: "Welcome  welcomr<br>"
 
 
 # for contact form
