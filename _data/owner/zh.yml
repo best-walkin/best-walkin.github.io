@@ -5,7 +5,7 @@
 brand: "Walkin博客"
 
 # text below the brand name
-brand_sub_text: "$site_sample"
+brand_sub_text: "山再高，往上攀，总能登顶；路再长，走下去，定能到达。"
 
 # used for seo meta post author (if it's not defined in post)
 name: "Walkin"

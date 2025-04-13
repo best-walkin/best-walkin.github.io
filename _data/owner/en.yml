@@ -5,7 +5,7 @@
 brand: "Walkin Blog"
 
 # text below the brand name
-brand_sub_text: "$site_sample"
+brand_sub_text: "However high the mountain is, if you keep climbing, you will come to the summit. However long the journey is, if you keep walking, you will certainly arrive at your destination."
 
 # used for seo meta post author (if it's not defined in post)
 name: "Walkin"
