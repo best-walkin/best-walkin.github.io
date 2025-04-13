@@ -175,7 +175,8 @@ privacy-policy:
 constants:
   greetings: Hello, welcome to Walkin blog.
   welcome: Welcome
-  sample: "Here I will share my learning process, and I hope these articles will help you. If you have any questions, please feel free to contact me. I will be happy to help you.\n"
+  sample: Processing
+  #"Here I will share my learning process, and I hope these articles will help you. If you have any questions, please feel free to contact me. I will be happy to help you.\n"
 
 # for contact form
 contact_form:
