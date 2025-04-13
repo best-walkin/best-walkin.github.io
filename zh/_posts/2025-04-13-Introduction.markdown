@@ -13,7 +13,7 @@ tags: [vasp, python]
 # thumbnail image for post
 img: ":post_pic3.jpg"
 # disable comments on this page
-comments_disable: true
+comments_disable: false
 
 # publish date
 date: 2025-04-13 13:45:08 +0900

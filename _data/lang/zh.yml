@@ -176,7 +176,7 @@ privacy-policy:
 constants:
   greetings: 您好，欢迎来到我的博客。
   welcome: 欢迎
-  sample: "在这里我将分享我的学习过程，希望这些文章能对您有帮助。"
+  sample: "在这里我将分享我的学习过程，希望这些文章能对您有帮助。如果您有任何问题，请随时与我联系，我会尽快回复您。\n"
 
 # for contact form
 contact_form:
