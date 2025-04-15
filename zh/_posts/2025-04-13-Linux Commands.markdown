@@ -1,15 +1,15 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
-lng_pair: id_vasp_1
-title: Linux系统安装VASP6.3.2(vtst&vaspsol++)
+lng_pair: id_linux_1
+title: Linux常用高级命令
 
 # post specific
 # if not specified, .name will be used from _data/owner/[language].yml
 #author: ""
 # multiple category is not supported
-category: VASP
+category: Linux
 # multiple tag entries are possible
-tags: [vasp, python]
+tags: [Linux]
 # thumbnail image for post
 img: ":post_pic3.jpg"
 # disable comments on this page
@@ -41,20 +41,15 @@ date: 2025-04-13 13:45:08 +0900
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-# VASP.6.3.2编译
-| Name        | Version     |
-| :---:        |    :----:   |
-| Linux System| Ubuntu 22.04|
-| gcc         | 11.4        |
-| Intel oneAPI Base Toolkit| 2023.1.0.46401|
-| Intel oneAPI HPC Toolkit| 2023.1.0.46346|
-### Intel OneAPI安装
-##### 1. 下载Intel oneAPI到/opt目录
-    root@localhost:/opt# chmod +x l_BaseKit_p_2023.1.0.46401_offline.sh
-    root@localhost:/opt# chmod +x l_HPCKit_p_2023.1.0.46346_offline.sh
-    root@localhost:/opt# apt-get install make gcc g++ libxml2-dev zlib1g-dev libboost-all-dev libssl-dev apt-get install xdg-utils libgbm1 libgtk-3-0 libnotify4 libnotify4 libxcb-dri3-0 libatspi2.0-0 -y
-##### 2. 安装Intel oneAPI Base Toolkit
-    root@localhost:/opt# ./l_BaseKit_p_2023.1.0.46401_offline.sh
+# Linux高级命令
+## find类
+#### 在所有一级子文件夹中执行命令
+    find /path/to/parent -maxdepth 1 -type d -not -name "." -exec bash -c 'cd "{}" && 命令' \;
+
+## 其他
+#### 文件命名不能带-，例如-0.5.dat
+    cp PDOS_USER.dat -- -0.5.dat
+
     
      
 
