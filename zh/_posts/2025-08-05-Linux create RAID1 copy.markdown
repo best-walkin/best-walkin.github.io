@@ -1,7 +1,7 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
-lng_pair: id_linux_5
-title: Ubuntu离线安装NVIDIA驱动
+lng_pair: id_linux_3
+title: Linux创建RAID1
 
 # post specific
 # if not specified, .name will be used from _data/owner/[language].yml
@@ -16,7 +16,7 @@ img: ":post_pic3.jpg"
 comments_disable: false
 
 # publish date
-date: 2025-08-05 16:45:08 +0900
+date: 2025-08-05 13:45:08 +0900
 
 # seo
 # if not specified, date will be used.
@@ -41,32 +41,38 @@ date: 2025-08-05 16:45:08 +0900
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-# Ubuntu离线安装NVIDIA驱动
+# Linux创建RAID1
     两块容量大小一致的硬盘
-## 安装gcc-12(如果已经安装了可以跳过)
-#### 安装gcc-12
-    如果没有安装的话会报错
+## 安装硬盘
+#### 格式化硬盘
+##### 查看硬盘
+    lsblk
+##### 格式化硬盘(我这里硬盘为/dev/sda和/dev/sdb)
+    mkfs.ext4 /dev/sda
+    mkfs.ext4 /dev/sdb
+##### 硬盘分区(由于硬盘大于2T时不能使用fdisk分区，只能使用parted分区)
+    # 给硬盘sda分区
+    parted /dev/sda
+    # 新建磁盘标签类型为GPT
+    mklabel gpt
+    # 创建分区(整个硬盘就是一个分区)
+    mkpart primary 0% 100%
+    # 退出
+    quit
+    # 对/dev/sdb执行相同操作
+##### 格式化分区
+    mkfs.ext4 /dev/sda1
+    mkfs.ext4 /dev/sdb1
+##### 查看备份数据是否完整
 
-## 安装NIVDIA驱动
-##### 从NVIDIA官网下载对应的驱动文件.run格式
-    https://www.nvidia.cn/geforce/drivers
-##### 查看nouveau驱动
-    lsmod | grep nouveau
-###### 如果有输出则需要禁用
-    vi /etc/modprobe.d/blacklist.conf
+## 创建RAID
+##### 安装mdadm
+    apt install mdadm
+##### 创建md0硬盘RAID1组
+    mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/sda1 /dev/sdb1 
+##### 查看创建进程(时间比较久，不要关机)
+    cat /proc/mdstat
 
-    在最后添加如下内容
-    blacklist nouveau
-    options nouveau modeset=0
-###### 更新
-    update-initramfs -u
-    lsmod | grep nouveau
-    没有输出即为成功，有的话可以重启机器尝试
-##### 安装NVIDIA驱动
-    chmod +x NVIDIA-Linux-x86_64-440.31.run
-    sh NVIDIA-Linux-x86_64-440.31.run --no-opengl-files
-##### 查看是否成功
-    nvidia-smi
 
     
      
